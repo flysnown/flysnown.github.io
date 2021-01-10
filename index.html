@@ -52,25 +52,29 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">读书笔记</a>
+            <li class="nav-item" data-level="1"><a href="#mkdocsgithub-pages" class="nav-link">Mkdocs+github pages</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">视频会议系统概述</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_7" class="nav-link">视频会议体系标准</a>
+            <li class="nav-item" data-level="2"><a href="#mkdocs" class="nav-link">mkdocs的安装</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#_8" class="nav-link">视频技术</a>
+            <li class="nav-item" data-level="2"><a href="#git" class="nav-link">下载git</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#_15" class="nav-link">音频技术</a>
+            <li class="nav-item" data-level="2"><a href="#github" class="nav-link">创建自己的GitHub网站</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#_16" class="nav-link">视频会议系统外围设备</a>
+            <li class="nav-item" data-level="2"><a href="#mkdocs_1" class="nav-link">编辑mkdocs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#github_1" class="nav-link">上传到GitHub</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">参考来源</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -81,501 +85,96 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">读书笔记</h1>
-<p>视频会议培训教程读书笔记</p>
-<h2 id="_2">视频会议系统概述</h2>
-<h4 id="_3">概念</h4>
-<p>通俗地说，视频会议系统就是为人们无法聚集到同一个地方召开会议的时候提供一种高科技的通信、协议和决策的一种现代化多媒体通讯手段。</p>
-<p>专业地说，视频会议是利用现有通信网和数字信号压缩处理技术，将音频和数据信号处理后传到远端，实现面对面交流</p>
-<ul>
-<li>
-<p><strong>形式</strong></p>
-<p>点对点、点对多点、多点对多点</p>
-</li>
-<li>
-<p><strong>应用</strong></p>
-<p>MCU、视频会议终端、网闸、相关的配套外围设备</p>
-</li>
-</ul>
-<h4 id="_4">组成</h4>
-<p>MCU、传输网络、会议控制软件、视频终端、各类外设</p>
-<ul>
-<li>
-<p><strong>视频会议终端</strong>
-<center>  <br />
-    桌面型</p>
-<p><img alt="桌面型" src="/image/2.jpg" /></p>
-<p>机顶盒型    </p>
-<p><img alt="机顶盒型" src="/image/3.png" />   </p>
-<p>会议室型</p>
-<p><img alt="会议室型" src="/image/4.png" /></p>
-</li>
-</ul>
-<p></center></p>
-<ul>
-<li>
-<p><strong>会议控制软件</strong></p>
-<p>通常采用B/S设计结构，早期一般采用MCU内置Web服务端，客户通过PC端以浏览器方式登录。</p>
-<p>可实现服MCU等设备资源的集中控制和对视频会议等业务应用的全面调度。</p>
-<p><strong>功能</strong>：域管理、用户管理、设备管理、会议管理、资源管理、营帐管理、报表管理、运维管理、集群化管理等</p>
-</li>
-<li>
-<p><strong>传输网络</strong></p>
-<p>传输网络即宽带连接方式，早期采用帧中继方式，目前通常采用SDH接入、MSTP接入方式和无线接入等方式。</p>
-<p><strong>帧中继</strong>：低网络时延、低设备费用、高带宽利用率，但带宽不能满足现代业务发展要求。</p>
-<p><strong>SDH</strong>：在接入路由器必须支持以太协议到E1链路的转换，维护比较复杂，对维护人员要求较高。</p>
-<p><strong>MSTP</strong>：满足增加带宽、改进业务传输质量、降低运维难度的要求，同时可以提供业务分类及服务质量能力，提高业务使用体验。</p>
-</li>
-<li>
-<p><strong>附属设备</strong></p>
-<p>通常设备：投影仪、监视器/等离子屏、电子白板、麦克风、扩音设备、摄像机、播放机、录音机、中央控制器等</p>
-</li>
-<li>
-<p><strong>MCU</strong></p>
-<p>多点控制单元也叫多点会议控制器。</p>
-<p>多点视频会议系统的关键设备，类似于交换机</p>
-<p>&emsp;<strong>过程</strong>：
-<center></p>
-<p><img alt="MCU过程" src="/image/MCU.png" /></p>
-<p><img alt="MCU" src="/image/1.jpg" />
-</center></p>
-<h4 id="_5">发展历史</h4>
-</li>
-</ul>
-<p><center></p>
-<p><img alt="发展历史" src="/image/5.png" /></p>
-<p></center></p>
-<h4 id="_6">应用</h4>
-<ul>
-<li>
-<p><strong>点对点会议</strong></p>
-<p>即两个会场进行一对一的视讯会议。</p>
-</li>
-<li>
-<p><strong>多点讨论会议</strong></p>
-<p>主要应用于对某课题或项目的分析讨论会议，处于自由发言状态</p>
-</li>
-<li>
-<p><strong>多MCU分级会议应用</strong></p>
-<p>所有的MCU及终端设备能统一管理、分级控制，且增加新会议场点时易扩展。同级MCU在这种组网结构中地位平等。</p>
-</li>
-<li>
-<p><strong>流媒体服务</strong></p>
-<p>流媒体又叫流式媒体，开始它是指用视频传送服务器把节目当成数据包发出，传送到网络中。</p>
-<p>流媒体应用到视频会议中，大大改观了视频会议实时传输的效果，节省了带宽异界设备资源。</p>
-<p><strong>单播</strong>：从一台MCU发送的数据流只能传送给一台终端，对网络带宽要求高，但是非常灵活。</p>
-<p><strong>组播</strong>：构建一个具有组播能力的网络，可以让MCU只发送一个数据流给网络设备，网络设备转发给所有终端。</p>
-<p><strong>点播</strong>：对数据流可以开始、停止、后退、快进或暂停，主要应用于会议录像的点播
--  <strong>其他应用</strong></p>
-<p><strong>视频会议系统</strong>：
-远程教育与培训、远程医疗及指挥调度、可视视频指挥调度、高清多画面、高清电视墙、多方混音、录播、双流。</p>
-<p><strong>视频调度系统</strong>：
-应用于政法机关、交通、政府、电力、铁路、气象、工业厂矿、军队等领域</p>
-</li>
-</ul>
-<h2 id="_7">视频会议体系标准</h2>
-<ul>
-<li>
-<p><strong>H.323简介</strong></p>
-<p><strong>目标</strong>：  在基于IP的网络环境中，实现可靠的面向音视频的数据和实时应用</p>
-<p>&emsp;&emsp;H.323是一个框架性建设，它涉及终端设备、视频、音频和数据传输、通信控制、网络接口方面的内容，还包括了组成多点会议的多点控制单元（MCU）、网关以及网闸。</p>
-<p>&emsp;&emsp;H.323是基于分组交换的多媒体通信系统。视频设备之间的通信依托数据网络，每个视频设备通过IP协议实现互联通信。</p>
-<p><center></p>
-<p><img alt="H.323" src="/image/6.png" />
-<img alt="" src="/image/7.png" /></p>
-<p></center>
--  <strong>SIP简介</strong></p>
-</li>
-</ul>
-<p>&emsp;&emsp;SIP是一个基于IP的应用层信令控制协议，用于创建、修改和释放一个或多个参与者的会话。</p>
-<p>&emsp;&emsp;<strong>优点</strong>：简单、易于扩展、便于实现等</p>
-<p>&emsp;&emsp;<strong>不足</strong>：①没有解决多点会议的方案②协议标准性不强③没有应用案例</p>
-<h2 id="_8">视频技术</h2>
-<h4 id="hxxx">H.xxx视频编码技术</h4>
-<ul>
-<li>
-<p><strong>H.261与H.263协议</strong></p>
-<p>H.261是最早出现的视频编码协议，目的是规范ISDN网上的会议电视和可视电话应用中的编码技术。</p>
-<p>H.263协议是低码率图像压缩标准，在技术上是H.261的改进和扩充，支持码率小于64kbit/s。</p>
-<p>H.261协议是视频编码的经典之作，H.263是其发展，并将逐步在实际应用中取而代之。</p>
-</li>
-<li>
-<p><strong>H.264协议</strong></p>
-<p>H.264既是ITU-T的H.264，又是ISO/IEC的MPEG-4的第10部分。</p>
-<p>在同等图像质量下的压缩效率比以前的标准提高了2倍以上。H.264算法具有很高的编码效率，在相同的视频图像质量下，能够比H.263节约50%左右的码率。H.264的码流结构网络适应性强，增加了差错恢复能力，能够很好地适应IP和无线网络的应用。</p>
-</li>
-<li>
-<p><strong>H.265协议</strong></p>
-<p>主要面向高清数字电视及视频编解码系统的应用，提供从SQICF至4K超高清不同级别的视频应用。</p>
-<p>H.265的目标是编码效率比H.264提高50%，即在同等图像质量条件下，目标码率下降到H.264的50%。</p>
-<h4 id="mpeg-x">MPEG-X视频编码技术</h4>
-</li>
-<li>
-<p><strong>MPEG-1</strong>
-是MPEG组织制定的第一个视频和音频有损压缩标准。</p>
-<p>MPEG-1的输出质量大约和传统录像机VCR，信号质量相当。</p>
-<p>MPEG-1存在诸多不足，早期用于视频监控领域。</p>
-<p><strong>不足</strong>：①录像所要求的磁盘空间过大
-     ②图像清晰度不够高
-     ③对传输图像的带宽有一定的要求
-     ④MPEG-1的录像帧数固定为每秒25帧，不能丢帧录像，灵活性较差。</p>
-</li>
-<li>
-<p><strong>MPEG-2</strong>
-设计目标是高级工业标准的图像质量以及更高的传输率。 能够提供广播级的视像和CD级的音质。</p>
-<p>MPEG-2除了作为DVD的制定标准外，还可用于广播、有线电视网、电缆网络以及卫星直播提供广播级的数字视频。</p>
-<p>MPEG-2的另一个特点是，其可提供一个较广的范围改变压缩比，以适应不同的画面质量，存储容量，以及带宽的要求。</p>
-</li>
-<li>
-<p><strong>MPEG-4</strong>
-    不只是具体的压缩算法，它是针对数字电视、交互式绘图应用、交互式多媒体等整合及压缩技术的需求而制定的国家标准。</p>
-<p>旨在为多媒体通信及应用环境中提供标准算法及工具，从而建立起一种能被多媒体传输、存储、检索等应用领域普遍采用的一种数据格式。</p>
-<p>主要应用于视像电话、视像电子邮件和电子新闻等</p>
-<h4 id="_9">视频编码比较</h4>
-<p><center></p>
-</li>
-</ul>
-<p><img alt="" src="/image/8.png" /></p>
-<p></center></p>
-<h4 id="_10">视频接口</h4>
+<h1 id="mkdocsgithub-pages">Mkdocs+github pages</h1>
+<p>如何部署建设自己的blog站</p>
+<h2 id="mkdocs">mkdocs的安装</h2>
 <ol>
-<li>
-<p><strong>标清视频接口</strong></p>
-<ul>
-<li>
-<p><strong>复合视频接口</strong></p>
-<p>复合视频接口也叫AV接口或者Video接口是目前最普遍的一种视频接口。</p>
-<p><center></p>
-<p><img alt="" src="/image/9.png" /></p>
-<p></center></p>
-</li>
-<li>
-<p><strong>S-Video接口</strong></p>
-<p>为解决复合视频接口在信号重放时很难恢复与原信号完全一致的色彩的缺点，日本开发了S-Video接口</p>
-<p><center></p>
-<p><img alt="" src="/image/10.png" /></p>
-<p></center></p>
-</li>
-<li>
-<p><strong>BNG接口</strong></p>
-<p>BNG接口是指同轴电缆10Base2的接口，它用于非平衡信号的连接。</p>
-<p><center></p>
-<p><img alt="" src="/image/11.png" /></p>
-<p></center></p>
-</li>
-<li>
-<p><strong>IEEE1394接口</strong></p>
-<p>IEEE1394接口是苹果公司开发的串行标准，俗称火线接口，它支持外设热插拔，可为外设提供电源，省去了外设自带的电源，能连接多个不同设备，支持同步数据传输。</p>
-<p><center></p>
-<p><img alt="" src="/image/12.png" /></p>
-<p><img alt="" src="/image/13.png" /></p>
-<p></center></p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>高清视频接口</strong></p>
-<ul>
-<li>
-<p><strong>YPbPr/YCbCr色差接口</strong></p>
-<p>色差接口通常采用YPbPr和YCbCr两种标识，前者表示逐行扫描色差输出，后者表示隔行扫描色差输出。</p>
-<p><strong>特点</strong>：
-①由于将色度、色差分开传送，可以获得比AV端子和S端子更清晰的图像效果，而且传输距离较远。</p>
-<p>②色差分量接口是模拟接口，支持传送480I/480P/576P/4720P/1080I/1080P等格式的视  频信号，本身不传输音频信号。</p>
-<p>③色差输出的接口方式是目前最好模拟视频输出接口之一。</p>
-<p><center></p>
-<p><img alt="" src="/image/14.png" /></p>
-<p></center></p>
-</li>
-<li>
-<p><strong>VGA接口</strong></p>
-<p>VGA接口传输红、绿、蓝模拟信号以及同步信号，所以本质上是一种色差接口，是显卡上应用最为广泛的接口类型，也称D-Sub接口。</p>
-<p><strong>特点</strong>：①VGA接口传输的仍然是模拟信号。<br />
-②属于色差接口类型，所有支持传送720p/1080i/1080p等格式的视频信号。</p>
-<p><center></p>
-<p><img alt="" src="/image/15.png" /></p>
-<p></center>
-    -  <strong>HDMI接口</strong></p>
-<p>针对DVI接口在应用中的暴露的种种问题，制定了HDMI标准。HDMI意思是高清晰多媒体接口。</p>
-<p><strong>特点</strong>：
-①是一种数字化视频/音频接口技术，可同时传送音频和影像信号，最高数据  传输速度为48Gbps，至少支持一个1080P的视频和一个8声道的音频信号。<br />
-②HDMI的设备具有“即插即用”的特点，信号源和显示设备之间会自动进行“协   商”，自动选择最合适的视频、音频格式。同时无需在信号传送前进行数/模或者模/数转换。<br />
-③与DVI相比HDMI接口的体积更小，HDMI的线缆长度最假距离均不超过8米，最远传输距离不超过15米<br />
-④HDMI在针脚上和DVI兼容，只是采用了不同的封装。</p>
-<p><center></p>
-<p><img alt="" src="/image/16.png" /></p>
-<p></center>
-    -  <strong>DVI接口</strong></p>
-<p>DVI-Analog接口只传输模拟信号。<br />
-DVI-Digital接口是纯数字接口。<br />
-DVI-Integrated接口是兼容数字和模拟接口</p>
-<p><strong>特点</strong>：
-①速度快，画面清晰。<br />
-②DVI接口考虑的对象是PC，对于平板电视的兼容能力一般。<br />
-③DVI接口出于兼容性考虑，预留了不少引脚以支持模拟设备，造成接口体积较大，效率低<br />
-④DVI接口只能传输图像信号，对于数字音频信号的支持完全没有考虑<br />
-⑤传输距离短，在传输带宽8Gbps情形下，传输距离为5米。</p>
-<p><center></p>
-<p><img alt="" src="/image/17.png" /></p>
-<p></center>
-    -  <strong>SDI接口</strong></p>
-<p>有两种SDI标准：标准清晰度SDI和高清晰度SDI。SD-SDI与HD-SDI这两个标准的基本电气规范相同，其主要差别是HD-SDI具有更高的1.485Gbps和1.45/1001Gbps数据速率，而SD-SDI数据速率范围为143Mbps~540Mbps，最常用的是270Mbps。</p>
-<p><strong>HD-SDI特点</strong>：
-    ①架设距离长，有效架设为100米<br />
-    ②标准线缆，有效距离是100米，超过100米必须使用中继器 <br />
-    ③一根线传输，HD-SDI可以使用一根同轴电缆传输视频和音频信号。</p>
-<p><center></p>
-<p><img alt="" src="/image/18.png" /></p>
-<p></center>
-    -  <strong>HDBaseT接口</strong></p>
-<p>接头俗称水晶头或以太网接头，传输介质采用网线， HDBaesT标准除了提供视频信号传输功能还具有网络连接以及以太网供电功能。</p>
-<p><strong>特点</strong>：
-    ①支持最高20Gbps的传输速率，能完美地支持FULL 3D和4K×2K    视频格式<br />
-    ②传输采用普通的CAT5e/6网络线缆进行无压缩传输。<br />
-    ③连接器采用普通的RJ45接头，而传输距离到达了100米。<br />
-    ④提供以太网功能，100W的供电能力和其他控制信号通道。 </p>
-<p><center></p>
-<p><img alt="" src="/image/19.png" /></p>
-<p></center> 
-<center></p>
-<p><img alt="" src="/image/20.png" /></p>
-<p></center></p>
-</li>
-</ul>
-</li>
+<li>首先安装<a href="https://www.python.org/">Python</a>（目前mkdocs最高支持python3.8）</li>
+<li>安装pip（python3.8自带pip工具此步可省略）</li>
+<li>使用pip下载Mkdocs库，执行<br />
+<center>  <br />
+<strong>pip  install  mkdocs</strong><br />
+</center></li>
 </ol>
-<h4 id="_11">视频会议相关名词解释</h4>
-<p>&emsp;&emsp;分辨率：度量图像内数据量的多少，即屏幕图像的精密度<br />
-&emsp;&emsp;帧率：测量显示帧数的量度<br />
-&emsp;&emsp;CIF：通用影像传输视频会议中常用的影像传输格式<br />
-    &emsp;&emsp;特点：在H.323协议簇中，确定其分辨率为352×288<br />
-        &emsp;&emsp;使用NTSC帧速率，视频图像的最大帧分辨率为30幅/秒<br />
-        &emsp;&emsp;使用1/2的PAL水平分辨率，即288线<br />
-        &emsp;&emsp;使用逐行扫描方式<br />
-        &emsp;&emsp;对亮度和两个色差信号（Y、Cb和Cr）分量分别进行编码<br />
-        &emsp;&emsp;隔行扫描逐行扫描：都是CRT（阴极射线管）时代显示器的水平扫描方式<br />
-        &emsp;&emsp; 特点：逐行扫描的图像画面平滑、无闪烁<br />
-            &emsp;&emsp;&emsp; &emsp;&emsp;隔行扫描行间闪烁比较明显、会造成锯齿现象<br />
-             &emsp;&emsp;&emsp; &emsp;&emsp;隔行扫描就是每一帧被分割成为两场，每一场包含了一帧中所有的奇数扫描行或者偶数扫描行  </p>
-<h4 id="_12">嵌入式系统</h4>
-<p style="text-indent:2em">
-嵌入式系统是一个软硬件高度结合的产物，为提高执行速度和系统可靠性，嵌入式系统中的软件一般都固化在存储器芯片或单片机本身中，而不是存储于硬盘等载体中。  </p>
-<p style="text-indent:2em">
-嵌入式系统一般指非PC系统，它包括硬件和软件两部分。 </p>
-
-<p>&emsp;&emsp;<strong>特点</strong>：嵌入式系统通常是面向特定应用的<br />
-     &emsp;&emsp;嵌入式系统CPU大多工作在特定用户群设计的系统中，具有低功耗、体积小、集成度高等特点<br />
-     &emsp;&emsp;嵌入式系统是一个技术密集、资金密集、高度分散、不断创新的知识集成系统。<br />
-     &emsp;&emsp;嵌入式系统的硬件和软件都必须高效率地设计，量体裁衣、去除冗余，在同样的硅片面积上实现更高的性能。<br />
-     &emsp;&emsp;嵌入式系统具有较长的生命周期<br />
-     &emsp;&emsp;嵌入式系统中的软件一般都固化在存储器芯片或单片机本身中
-     &emsp;&emsp;用户通常不能对嵌入式系统中的程序功能进行修改，必须要有一套开发工具和环境</p>
-<h4 id="_13">双流技术</h4>
-<p>双流实际上是指双视频流传送技术，允许主机在一个视频会议中同时发送视频和内容。</p>
-<ul>
-<li>
-<p><strong>H.239双流</strong></p>
-<p>在一次呼叫建立媒体连接后，在两个H.239终端之间传送两路媒体流，这两条媒体流共享呼叫带宽，基于此项技术，视频用户可以得到双流视频服务，可以实现在会议系统中同时传送和显示多路视频信息。</p>
-<p><strong>注意</strong>：在H.239协议中，附加的视频流是被定义为单向的，不过H.239可以允许用户容易地在会议两点之间切换发言者。</p>
-</li>
-<li>
-<p><strong>“桌面传送”双流</strong></p>
-<p>这是一种通过插帧的方式传送静止图文的方式。桌面传送的方式实际上将其中的一帧或多帧用于传送静态图文，远程终端收到这些图像后通过VGA接口输出</p>
-</li>
-</ul>
-<h4 id="mcu">MCU会议功能</h4>
-<ul>
-<li>
-<p><strong>全适配转发模式</strong>
-    VSW，视频转发。所有会场必须使用相同的呼叫速率，相同的视频协议、相同的分辨率，MCU不进行任何处理，类似于交换机作用，不需要额外资源板卡。</p>
-</li>
-<li>
-<p><strong>全编全解模式</strong>
-    MCU可以将多个终端的图像进行处理、整合，然后形成一个多画面图像，再将多画面图像分别发送给不同的终端。全编全解需要MCU的额外资源板卡，各个终端可以以不同的速率、不同的分辨率、不同的视频协议进行呼叫。</p>
-</li>
-</ul>
-<h4 id="_14">视频会议功能</h4>
-<p style="text-indent:2em">
-主席控制、终端自主、虚拟会议室、导演控制、自动轮询、语音激励、电话会议备份、单播、组播、短消息字幕、只能混音、码流适配、电视墙功能、多画面分割、自主多画面、数字录像和点播、数字级联、不同厂家设备互联互通
-</p>
-<h2 id="_15">音频技术</h2>
-<ul>
-<li>
-<p><strong>音频编码技术</strong></p>
-<ul>
-<li><strong>G.711</strong> <br />
-优点：算法复杂度低，压缩比小，编解码延时最短<br />
-缺点：占用的传输带宽较高  </li>
-<li><strong>G.719</strong><br />
-优点：覆盖的音频频带上达22kHz，所占用的传输带宽低，CD级音质让声音更清晰，具有立体声能力，可对声音进行理想的跟踪<br />
-缺点：占传输带宽比较高  </li>
-<li><strong>G.721</strong><br />
-优点：压缩比大<br />
-缺点：声音质量一般  </li>
-<li><strong>G.722</strong><br />
-优点：音质好<br />
-缺点：占用的传输带宽较高  </li>
-<li><strong>G.722.1</strong>
-优点：音质好，占用的传输带宽已大幅下降<br />
-缺点：传输带宽仍偏高  </li>
-<li><strong>G.722.1.C</strong><br />
-优点：音质更清晰，降低听着疲劳程度<br />
-缺点：是Polycom的专利技术  </li>
-<li><strong>G.723</strong><br />
-优点：码率低，传输带宽要求较小。并达到ITU-TG723要求的语音质量，性能稳定<br />
-缺点：声音质量一般  </li>
-<li><strong>G.723.1</strong><br />
-优点：码率低，传输带宽要求较小，并达到ITU-TG723要求的语音质量，性能稳定，避免载波信号的时通时断<br />
-缺点：声音质量一般  </li>
-<li><strong>G.728</strong><br />
-优点：码率低，时延低，传输带宽占用小，采用自适应后置滤波算法提高性能<br />
-缺点：比其他编码器都复杂  </li>
-<li><strong>G.729</strong><br />
-优点：传输带宽低，语音质量良，应用领域很广泛，采用矢量量化，合成分析和感觉加权，提供了对帧丢失和分组丢失的隐藏处理机制<br />
-缺点：在处理随机比特错误方面性能不好  </li>
-<li><strong>G.729A</strong><br />
-优点：传输带宽低，语音质量良，降低了计算的复杂度以便于实时实现，提供了对帧丢失和分组丢失的隐藏处理机制<br />
-缺点：性能较G.729差  </li>
-<li><strong>MPEG-1 audio layer 1</strong><br />
-优点：压缩方式相对于时域压缩技术要复杂很多，同时编码效率、声音质量也大幅提高，编码时延相应增加。可以达到“完全透明”的声音质量<br />
-缺点：传输带宽很高  </li>
-<li><strong>MPEG-1  audio  layer  2</strong><br />
-优点：压缩方式相对时域压缩技术而言要复杂的多，同时编码效率、声音质量也大幅度提高，编码时延相应增加，可以达到“完全透明”的声音质量<br />
-缺点：传输带宽高  </li>
-<li><strong>MPEG-1   audio  layer   3</strong><br />
-优点：压缩比高，适用于互联网上的传播<br />
-缺点：MP3在128Kbit及以下时，会出现明显的高频丢失  </li>
-<li><strong>MPEG-2    audio  layer    2</strong><br />
-优点：支持5.1声道和7.1声道的环绕立体声  <br />
-特性：以很低的传输带宽提供了低延时的高质量音频  </li>
-</ul>
-</li>
-<li>
-<p><strong>音频处理技术</strong></p>
-<ul>
-<li>
-<p><strong>回音抵消</strong> 
-    回声是由声波的反射引起的声音的重复也可指反射回来的超声波信号。  </p>
-<p>AEC是回声消除器，利用它对回声进行估计，并不断地修正滤波器系数，使估计值逼近真实回音，再将估计值从话筒中减去，从而达到清除回声的目的，AEC可消除各种延迟的回声。 </p>
-</li>
-<li>
-<p><strong>自动增益</strong>
-    AGC是自动增益补偿功能，可解决声音忽大忽小的问题</p>
-</li>
-<li>
-<p><strong>背景噪声消除</strong><br />
-    ANS是背景噪声抑制功能，可探测出背景固定频率的杂音并消除背景噪声。</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>模拟音频接口</strong></p>
-<ul>
-<li>
-<p><strong>RCA接口</strong><br />
-   &emsp;&emsp;俗称莲花头，每一根RCA线缆负责传输一个声道的音频信号，一般右声道用红色标注，左声道用蓝色或者白色标注</p>
-<p><center><img alt="" src="/image/21.png" /></center></p>
-</li>
-<li>
-<p><strong>小三芯，大三芯接口（TRS接口）</strong><br />
-      &emsp;&amp;emsp用于平衡信号的传输，或者不平衡的立体声信号的传输，俗称3.5mm为小三芯，6.5mm为大三芯</p>
-<p><center></p>
-<p><img alt="" src="/image/22.png" /></p>
-<p></center>
-    -  <strong>卡侬接口（XLR接口）</strong><br />
-    &emsp;&emsp;与RCA模拟音频线缆直接传输声音的方式完全不同，平衡音频接口使用两个通道分别传送信号相同相位相反的信号，接收端设备相减，干扰信号就被抵消<br />
-    &emsp;&emsp;采用平衡传输方式，抵抗外界干扰能力强，利于远距离传输（不大于100米）<br />
-    &emsp;&emsp;具有弹簧锁定装置，连接可靠，不以拉脱<br />
-    &emsp;&emsp;接插件规定了信号流向，便于防止连接上的差错</p>
-<p><center></p>
-<p><img alt="" src="/image/23.png" /></p>
-<p></center>
--  <strong>数字音频接口</strong></p>
-</li>
-<li>
-<p><strong>HDMI接口</strong><br />
-    &emsp;&emsp;高清晰度多媒体接口是一种数字化视频/音频接口技术，适合影像传输的专用型数字化接口，其可同时传送音频和影响信号，同时无需在信号传送前进行数/模转换或者模/数转换</p>
-<p><center></p>
-<p><img alt="" src="/image/16.png" /></p>
-<p></center>
-    -  <strong>DVI接口</strong><br />
-      &emsp;&emsp;DVI即数字视音频接口，是基于TMDS转换最小差分信号技术来传输数字信号。</p>
-<p><center></p>
-<p><img alt="" src="/image/17.png" /></p>
-<p></center>
-    -  <strong>MIC接口</strong><br />
-      &emsp;&emsp;现在的数字全向麦克风通常用到此类接口，采用RJ6芯传输</p>
-<p><center></p>
-<p><img alt="" src="/image/24.png" /></p>
-<p></center></p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>调音台的基本功能</strong></p>
-<ul>
-<li><strong>信号放大</strong><br />
-   &emsp;&emsp;调音台为适应输入信号的不同电平大小，通常在调音台输入端有高电平（线路输入）和低电平（传声输入）两个插口</li>
-<li><strong>信号处理</strong><br />
-    &emsp;&emsp;最基本的是频率均衡，根据要求对声音不同频率进行提升或衰减，以美化声源音色，也可消除噪声。</li>
-<li><strong>信号混合</strong><br />
-&emsp;&emsp;调音台的输入有多路，而输出可能只有一路或两路，因此需要将多路信号进行混合</li>
-<li><strong>信号分配</strong><br />
-&emsp;&emsp;调音台不仅有多路输入，还有多路输出，除主输出外，还有辅助输出和编外输出，因此需要对各路输出进行分配</li>
-<li>
-<p><strong>显示，监听，编组，遥控，对讲等功能</strong></p>
-<p><center></p>
-<p><img alt="" src="/image/25.png" /></p>
-<p></center></p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>调音台的使用</strong></p>
-<ul>
-<li><strong>信号流程</strong><br />
-  流程图分三个部分：信号输入部分，母线部分，
-   信号输出部分</li>
-<li><strong>输入部分</strong><br />
-    输入部分有13个相关部件：卡侬插座MIC，线路输入端LINE，插入插座INSERT，增益调节，均衡调节（高频段，中频段，低频段），辅助旋钮，声像调节，独奏开关，哑音开关，峰值指示灯，通道衰减器，单声道输入，立体声输入</li>
-<li>
-<p><strong>输出部分</strong><br />
-    主输出：Main  OUTS,Main L-R,Mix  OUTS,   ST   OUTS,   ST  L-R<br />
-    单声道输出：MONO OUT<br />
-    主输出插入：I/O<br />
-    监听输出：C-R<br />
-    编组输出：SUB OUTS,  GROUP OUTS, BUS  OUTS, OMNI  OUT,   ALT  3-4<br />
-    辅助输出：AUX  OUT,  AUX  SEND,  AUX1.2<br />
-    直接传输：Direct  Out<br />
-    录音输出:  REC  OUT<br />
-    耳机输出：PHONE  </p>
-</li>
-<li>
-<p><strong>幻象供电</strong><br />
-&emsp;&emsp;幻象供电就是电容调音台或前置放大器获得电源供应，通常是11～48伏的直流电，同时供应电容头的极化和放大电路的用电。各种电容麦克风耗用的电流为1～12毫安</p>
-</li>
-<li>
-<p><strong>调音台的音频输入模式</strong></p>
-</li>
-<li>
-<p><strong>手拉手</strong><br />
-&emsp;&emsp;手拉手会议系统采用话筒首尾串联的连接方式，所有话筒采用幻象电源供电
-    <center></p>
-<p><img alt="" src="/image/26.png" /></p>
-<p></center>
-    -  <strong>一对一</strong><br />
-    &emsp;&emsp;在电路结构上，传统的会议系统的话筒是放射状连接，即话筒线从调音台开始，有几只话筒就放几根话筒线接到末端的话筒上。  <br />
-<strong>缺点</strong>：围绕调音台出来的线又多又杂，易拉扯、缠绕、打结，不易管理，维修麻烦<br />
-<strong>优点</strong>：一路话筒出现故障，不影响其他话筒使用
-<center></p>
-<p><img alt="" src="/image/27.png" /></p>
-<p></center></p>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="_16">视频会议系统外围设备</h2>
-<p>&emsp;&emsp;显示设备、电视机、显示器、大屏幕系统、小间距LED、电子白板、音频设备、声源设备（话筒，多媒体播放设备）、调音台、功率放大器、音箱、摄像设备、摄像机、视频展示台、音视频矩阵、中控系统、</p></div>
+<h2 id="git">下载git</h2>
+<p>访问<a href="https://git-scm.com/downloads">Git网站</a>
+下载最新的Git工具</p>
+<h2 id="github">创建自己的GitHub网站</h2>
+<h3 id="_1">创建自己的账号</h3>
+<p>访问<a href="https://github.com/">Github社区</a>
+创建自己的账号</p>
+<h3 id="_2">创建自己的仓库</h3>
+<ol>
+<li>在任何页面的右上角，使用+下拉菜单选择 New repository（新建仓库）。</li>
+<li>为仓库输入名称，建议使用&lt;用户名&gt;.github.io</li>
+<li>（可选）添加仓库的说明。</li>
+<li>选择仓库可见性。 </li>
+<li>选择 Initialize this repository with a README（使用自述文件初始化此仓库）。</li>
+<li>点击 Create repository</li>
+<li>创建成功</li>
+</ol>
+<h3 id="ssh">上传SSH秘钥</h3>
+<ol>
+<li>打开Git Bash</li>
+<li>输入以下内容<br />
+<center>  <br />
+<strong>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</strong> 
+</center>
+    这将创建以所提供的电子邮件地址为标签的新 SSH 密钥。</li>
+<li>提示您“Enter a file in which to save the key（输入要保存密钥的文件）”时，按 Enter 键。 这将接受默认文件位置。</li>
+<li>在提示时输入安全密码。（可以不输）</li>
+<li>根据提示找到SSH秘钥生成位置，找到生成的.pub文件，用记事本打开，复制里面的全部内容</li>
+<li>登入GitHub网站，在页面的右上角，单击您的个人资料照片，然后单击 Settings（设置）</li>
+<li>在用户设置侧边栏中，单击 SSH and GPG keys（SSH 和 GPG 密钥）。</li>
+<li>单击 New SSH key（新 SSH 密钥）或 Add SSH key（添加 SSH 密钥）。</li>
+<li>在 "Title"（标题）字段中，为新密钥添加描述性标签。</li>
+<li>将密钥粘贴到 "Key"（密钥）字段。</li>
+<li>单击 Add SSH key（添加 SSH 密钥）。</li>
+<li>有可能会提示输入登入密码</li>
+</ol>
+<h2 id="mkdocs_1">编辑mkdocs</h2>
+<ol>
+<li>打开Git Bash软件</li>
+<li>在本地合适的位置使用命令clone线上仓库到线下，输入：<br />
+<center>  <br />
+<strong>git clone git@github.com:&lt;用户名&gt;/&lt;用户名&gt;.github.io.git</strong><br />
+</center>
+    此处建议使用SSHclone</li>
+<li>使用cd  &lt;用户名&gt;.github.io进去仓库</li>
+<li>创建文档项目，执行<br />
+<center>  <br />
+<strong>mkdocs new &lt;文件名&gt;</strong> 
+</center> 
+    执行完成后会在本地会生成一个文件夹，此文件夹中包含站点所有文件信息</li>
+<li>输入<strong>cd 文件名</strong>进入文件</li>
+<li>输入<strong>mkdocs serve</strong>站点开启成功后会的提示站点默认地址为：<a href="https://127.0.0.1:8000">https://127.0.0.1:8000</a></li>
+<li>在电脑上找到此文件夹，打开后找到一个以<strong>docs</strong>命名的文件夹，里面有一个index.md文件，编辑此文件可在<a href="https://127.0.0.1:8000">https://127.0.0.1:8000</a>上显示。（此步不使用Git，以上步骤在Git Bash中完成）</li>
+</ol>
+<h2 id="github_1">上传到GitHub</h2>
+<ol>
+<li>打开Git Bash软件</li>
+<li>进入上步创建的mkdocs文件中</li>
+<li>在创建的mkdocs文件夹目录下生成站点文件，执行<br />
+<center>  <br />
+<strong>mkdocs build</strong> <br />
+</center>
+执行成功后会在本地文档项目文件夹中生成一个名为site的文件夹，site文件夹就是通过mkdocs编译生成的包含index.html的可被浏览器直接打开的静态前端站点</li>
+<li>进入site文件夹，将文件夹里的文件拷贝到git本地仓库中（此步需要手动实现）</li>
+<li>在本地git仓库先后执行
+<center>
+<strong>git add -A</strong><br />
+<strong>git commit -m <commit words></strong><br />
+<strong>git push</strong><br />
+</center>
+  将本地仓库中的文件同步到github的main branch上</li>
+<li>此时通过https://&lt;用户名&gt;.github.io域名就可以访问到mkdocs静态网页站点</li>
+<li>使用这种方法每次更新本地站点文件需要手动同步一次到github上。</li>
+</ol>
+<h2 id="_3">参考来源</h2>
+<ol>
+<li><a href="https://www.jianshu.com/p/b07dc1fd4f9e?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">简书</a></li>
+<li><a href="https://docs.github.com/cn">Github Help</a></li>
+</ol></div>
             </div>
         </div>
 
@@ -659,5 +258,5 @@ DVI-Integrated接口是兼容数字和模拟接口</p>
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-01-09 11:21:44.399846+00:00
+Build Date UTC : 2021-01-10 02:34:42.844891+00:00
 -->
