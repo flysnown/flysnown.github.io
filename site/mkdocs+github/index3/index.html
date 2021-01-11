@@ -180,6 +180,18 @@
   </li>
 
       
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../author/index4/" class="md-tabs__link">
+      About me
+    </a>
+  </li>
+
+      
     </ul>
   </div>
 </nav>
@@ -352,6 +364,19 @@
   </li>
 
     
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../../author/index4/" class="md-nav__link">
+      About me
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -466,7 +491,7 @@
 <li>安装pip（python3.8自带pip工具此步可省略）</li>
 <li>
 <p>使用pip下载Mkdocs库，执行  </p>
-<p>pip  install  mkdocs  </p>
+<p><code>pip  install  mkdocs</code>  </p>
 </li>
 </ol>
 <h2 id="下载git">下载git</h2>
@@ -511,11 +536,9 @@
 <h3 id="上传ssh秘钥">上传SSH秘钥</h3>
 <ol>
 <li>打开Git Bash</li>
-<li>
-<p>输入以下内容  </p>
-<p>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"** </p>
-</li>
+<li>输入以下内容  </li>
 </ol>
+<p><code>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</code> </p>
 <p>这将创建以所提供的电子邮件地址为标签的新 SSH 密钥。
 3. 提示您“Enter a file in which to save the key（输入要保存密钥的文件）”时，按 Enter 键。 这将接受默认文件位置。
 4. 在提示时输入安全密码。（可以不输）
@@ -549,12 +572,12 @@
 <ol>
 <li>打开Git Bash软件</li>
 <li>在本地合适的位置使用命令clone线上仓库到线下，输入：<br />
-    git clone git@github.com:&lt;用户名&gt;/&lt;用户名&gt;.github.io.git  </li>
+<code>git clone git@github.com:&lt;用户名&gt;/&lt;用户名&gt;.github.io.git</code></li>
 </ol>
 <p>此处建议使用SSHclone
 3. 使用cd  &lt;用户名&gt;.github.io进去仓库
 4. 创建文档项目，执行  </p>
-<pre><code>mkdocs new &lt;文件名&gt;**
+<pre><code>`mkdocs new &lt;文件名&gt;`
 </code></pre>
 <p>执行完成后会在本地会生成一个文件夹，此文件夹中包含站点所有文件信息
 5. 输入<code>cd 文件名</code>进入文件
@@ -570,10 +593,9 @@
 <p>执行成功后会在本地文档项目文件夹中生成一个名为site的文件夹，site文件夹就是通过mkdocs编译生成的包含index.html的可被浏览器直接打开的静态前端站点
 4. 进入site文件夹，将文件夹里的文件拷贝到git本地仓库中（此步需要手动实现）
 5. 在本地git仓库先后执行</p>
-<pre><code>git add -A  
-git commit -m "commit words"  
-git push
-</code></pre>
+<p><code>git add -A      
+    git commit -m "commit words"    
+    git push</code> </p>
 <p>将本地仓库中的文件同步到github的main branch上
 6. 此时通过<em>https://&lt;用户名&gt;.github.io</em>域名就可以访问到mkdocs静态网页站点
 7. 使用这种方法每次更新本地站点文件需要手动同步一次到github上。</p>
@@ -614,6 +636,20 @@ git push
             </div>
           </a>
         
+        
+          <a href="../../author/index4/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                About me
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
         
       </nav>
     </div>
