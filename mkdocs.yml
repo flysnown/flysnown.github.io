@@ -3,7 +3,7 @@ theme:
   name: material
 nav:  
   - 一： index.md
-  - 二： index2.md
+  - 二： image/index2.md
  
 
 markdown_extensions:
