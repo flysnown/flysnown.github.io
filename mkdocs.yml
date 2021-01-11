@@ -5,7 +5,9 @@ theme:
     - navigation.instant
     - navigation.tabs
 
-
+nav:
+-  主页: index.md
+-  视频会议读书笔记: install/index2.md
 
 
 
