@@ -1,11 +1,13 @@
 site_name: 主页  
-theme:  
+theme:
   name: material
-nav:
-  - mkdocs+GitHub: index.md
-  - 读书笔记: install/index2.md
+  features:
+    - navigation.instant
+    - navigation.tabs
 
- 
+
+
+
 
 markdown_extensions:
   - admonition
@@ -32,3 +34,16 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist
   - pymdownx.tilde
+
+
+
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+markdown_extensions:
+  - toc:
+      slugify: !!python/name:pymdownx.slugs.uslugify

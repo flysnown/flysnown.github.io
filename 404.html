@@ -36,6 +36,8 @@
     
     
     
+      <link rel="stylesheet" href="/stylesheets/extra.css">
+    
     
       
     
@@ -130,6 +132,43 @@
       
       
         
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="/." class="md-tabs__link">
+      Mkdocs+github pages
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/install/index2/" class="md-tabs__link">
+        Install
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
       
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
@@ -143,8 +182,10 @@
 
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="/." title="主页" class="md-nav__button md-logo" aria-label="主页">
       
@@ -165,7 +206,7 @@
 
   <li class="md-nav__item">
     <a href="/." class="md-nav__link">
-      mkdocs+GitHub
+      Mkdocs+github pages
     </a>
   </li>
 
@@ -176,10 +217,39 @@
 
 
 
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    
+    <label class="md-nav__link" for="nav-2">
+      Install
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Install" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Install
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
   <li class="md-nav__item">
     <a href="/install/index2/" class="md-nav__link">
       读书笔记
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -227,12 +297,14 @@
       <script>
         app = initialize({
           base: "/",
-          features: [],
+          features: ['navigation.instant', 'navigation.tabs'],
           search: Object.assign({
             worker: "/assets/javascripts/worker/search.8c7e0a7e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
+      
+        <script src="/javascripts/extra.js"></script>
       
     
   </body>
