@@ -1,9 +1,8 @@
 site_name: mkdocs上传GitHub  
 theme:  
   name: material
-nav:  
-  - 一： index.md
-  - 二： image/index2.md
+
+  - 二： install/index2.md
  
 
 markdown_extensions:
