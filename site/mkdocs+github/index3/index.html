@@ -99,36 +99,6 @@
       </div>
     </div>
     
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
   </nav>
 </header>
@@ -489,11 +459,10 @@
 <ol>
 <li>首先安装<a href="https://www.python.org/">Python</a>（目前mkdocs最高支持python3.8）</li>
 <li>安装pip（python3.8自带pip工具此步可省略）</li>
-<li>
-<p>使用pip下载Mkdocs库，执行  </p>
-<p><code>pip  install  mkdocs</code>  </p>
-</li>
+<li>使用pip下载Mkdocs库，执行  </li>
 </ol>
+<pre><code>pip  install  mkdocs
+</code></pre>
 <h2 id="下载git">下载git</h2>
 <p>访问<a href="https://git-scm.com/downloads">Git网站</a>
 下载最新的Git工具</p>
@@ -538,7 +507,8 @@
 <li>打开Git Bash</li>
 <li>输入以下内容  </li>
 </ol>
-<p><code>`</code>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"```</p>
+<pre><code>ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;
+</code></pre>
 <p>这将创建以所提供的电子邮件地址为标签的新 SSH 密钥。
 3. 提示您“Enter a file in which to save the key（输入要保存密钥的文件）”时，按 Enter 键。 这将接受默认文件位置。
 4. 在提示时输入安全密码。（可以不输）
@@ -571,33 +541,34 @@
 <h2 id="编辑mkdocs">编辑mkdocs</h2>
 <ol>
 <li>打开Git Bash软件</li>
-<li>
-<p>在本地合适的位置使用命令clone线上仓库到线下，输入：  </p>
-<p><code>git clone git@github.com:&lt;用户名&gt;/&lt;用户名&gt;.github.io.git</code>  </p>
-</li>
+<li>在本地合适的位置使用命令clone线上仓库到线下，输入：  </li>
 </ol>
+<pre><code>git clone git@github.com:&lt;用户名&gt;/&lt;用户名&gt;.github.io.git
+</code></pre>
 <p>此处建议使用SSHclone
 3. 使用cd  &lt;用户名&gt;.github.io进去仓库
 4. 创建文档项目，执行  </p>
-<pre><code>```mkdocs new &lt;文件名&gt;```
+<pre><code>mkdocs new &lt;文件名&gt;
 </code></pre>
 <p>执行完成后会在本地会生成一个文件夹，此文件夹中包含站点所有文件信息
-5. 输入    <code>cd 文件名</code>    进入文件
-6. 输入    <code>mkdocs serve</code>    站点开启成功后会的提示站点默认地址为：<a href="https://127.0.0.1:8000">https://127.0.0.1:8000</a>
+5. 输入 <code>cd 文件名</code>进入文件
+6. 输入 <code>mkdocs serve</code> 站点开启成功后会的提示站点默认地址为：<a href="https://127.0.0.1:8000">https://127.0.0.1:8000</a>
 7. 在电脑上找到此文件夹，打开后找到一个以<strong>docs</strong>命名的文件夹，里面有一个index.md文件，编辑此文件可在<a href="https://127.0.0.1:8000">https://127.0.0.1:8000</a>上显示。（此步不使用Git，以上步骤在Git Bash中完成）</p>
 <h2 id="上传到github">上传到GitHub</h2>
 <ol>
 <li>打开Git Bash软件</li>
 <li>进入上步创建的mkdocs文件中</li>
-<li>
-<p>在创建的mkdocs文件夹目录下生成站点文件，执行  </p>
-<p><code>mkdocs build</code>   </p>
-</li>
+<li>在创建的mkdocs文件夹目录下生成站点文件，执行  </li>
 </ol>
+<pre><code>mkdocs build
+</code></pre>
 <p>执行成功后会在本地文档项目文件夹中生成一个名为site的文件夹，site文件夹就是通过mkdocs编译生成的包含index.html的可被浏览器直接打开的静态前端站点
 4. 进入site文件夹，将文件夹里的文件拷贝到git本地仓库中（此步需要手动实现）
 5. 在本地git仓库先后执行</p>
-<p><code>git add -A      git commit -m "commit words"    git push</code>   </p>
+<pre><code>git add -A      
+git commit -m &quot;commit words&quot;    
+git push 
+</code></pre>
 <p>将本地仓库中的文件同步到github的main branch上
 6. 此时通过<em>https://&lt;用户名&gt;.github.io</em>域名就可以访问到mkdocs静态网页站点
 7. 使用这种方法每次更新本地站点文件需要手动同步一次到github上。</p>
@@ -606,6 +577,19 @@
 <li><a href="https://www.jianshu.com/p/b07dc1fd4f9e?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">简书</a></li>
 <li><a href="https://docs.github.com/cn">Github Help</a></li>
 </ol>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: 2021-01-11
+    
+  </small>
+</div>
+                  
                 
               
               
