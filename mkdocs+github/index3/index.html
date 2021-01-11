@@ -536,9 +536,11 @@
 <h3 id="上传ssh秘钥">上传SSH秘钥</h3>
 <ol>
 <li>打开Git Bash</li>
-<li>输入以下内容  </li>
-</ol>
+<li>
+<p>输入以下内容  </p>
 <p><code>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</code> </p>
+</li>
+</ol>
 <p>这将创建以所提供的电子邮件地址为标签的新 SSH 密钥。
 3. 提示您“Enter a file in which to save the key（输入要保存密钥的文件）”时，按 Enter 键。 这将接受默认文件位置。
 4. 在提示时输入安全密码。（可以不输）
@@ -571,8 +573,10 @@
 <h2 id="编辑mkdocs">编辑mkdocs</h2>
 <ol>
 <li>打开Git Bash软件</li>
-<li>在本地合适的位置使用命令clone线上仓库到线下，输入：<br />
-<code>git clone git@github.com:&lt;用户名&gt;/&lt;用户名&gt;.github.io.git</code></li>
+<li>
+<p>在本地合适的位置使用命令clone线上仓库到线下，输入：  </p>
+<p><code>git clone git@github.com:&lt;用户名&gt;/&lt;用户名&gt;.github.io.git</code></p>
+</li>
 </ol>
 <p>此处建议使用SSHclone
 3. 使用cd  &lt;用户名&gt;.github.io进去仓库
@@ -580,22 +584,22 @@
 <pre><code>`mkdocs new &lt;文件名&gt;`
 </code></pre>
 <p>执行完成后会在本地会生成一个文件夹，此文件夹中包含站点所有文件信息
-5. 输入<code>cd 文件名</code>进入文件
-6. 输入<code>mkdocs serve</code>站点开启成功后会的提示站点默认地址为：<a href="https://127.0.0.1:8000">https://127.0.0.1:8000</a>
+5. 输入    <code>cd 文件名</code>    进入文件
+6. 输入    <code>mkdocs serve</code>    站点开启成功后会的提示站点默认地址为：<a href="https://127.0.0.1:8000">https://127.0.0.1:8000</a>
 7. 在电脑上找到此文件夹，打开后找到一个以<strong>docs</strong>命名的文件夹，里面有一个index.md文件，编辑此文件可在<a href="https://127.0.0.1:8000">https://127.0.0.1:8000</a>上显示。（此步不使用Git，以上步骤在Git Bash中完成）</p>
 <h2 id="上传到github">上传到GitHub</h2>
 <ol>
 <li>打开Git Bash软件</li>
 <li>进入上步创建的mkdocs文件中</li>
-<li>在创建的mkdocs文件夹目录下生成站点文件，执行  </li>
-</ol>
+<li>
+<p>在创建的mkdocs文件夹目录下生成站点文件，执行  </p>
 <p><code>mkdocs build</code>   </p>
+</li>
+</ol>
 <p>执行成功后会在本地文档项目文件夹中生成一个名为site的文件夹，site文件夹就是通过mkdocs编译生成的包含index.html的可被浏览器直接打开的静态前端站点
 4. 进入site文件夹，将文件夹里的文件拷贝到git本地仓库中（此步需要手动实现）
 5. 在本地git仓库先后执行</p>
-<p><code>git add -A      
-    git commit -m "commit words"    
-    git push</code> </p>
+<p><code>git add -A      git commit -m "commit words"    git push</code> </p>
 <p>将本地仓库中的文件同步到github的main branch上
 6. 此时通过<em>https://&lt;用户名&gt;.github.io</em>域名就可以访问到mkdocs静态网页站点
 7. 使用这种方法每次更新本地站点文件需要手动同步一次到github上。</p>
