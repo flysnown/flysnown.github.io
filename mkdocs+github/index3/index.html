@@ -700,15 +700,25 @@
 <li>打开 Git Bash。</li>
 <li>设置 Git 用户名 </li>
 </ol>
-<p><code>git config --global user.name "Mona Lisa"</code><br />
-3. 确认您正确设置了 Git 用户名：</p>
-<p><code>git config --global user.name           
-  Mona Lisa</code><br />
-4. 在 Git 中设置电子邮件地址。 您可以使用 GitHub 提供的 <code>no-reply</code> 电子邮件地址或任何电子邮件地址。</p>
-<p><code>git config --global user.email "email@example.com"</code><br />
-5. 确认在 Git 中正确设置了电子邮件地址：</p>
-<p><code>$ git config --global user.email  
-  email@example.com</code></p>
+<pre><code>git config --global user.name &quot;Mona Lisa&quot;
+</code></pre>
+<ol>
+<li>确认您正确设置了 Git 用户名：</li>
+</ol>
+<pre><code> git config --global user.name           
+ Mona Lisa
+</code></pre>
+<ol>
+<li>在 Git 中设置电子邮件地址。 您可以使用 GitHub 提供的 <code>no-reply</code> 电子邮件地址或任何电子邮件地址。</li>
+</ol>
+<pre><code> git config --global user.email &quot;email@example.com&quot;
+</code></pre>
+<ol>
+<li>确认在 Git 中正确设置了电子邮件地址：</li>
+</ol>
+<pre><code> $ git config --global user.email  
+ email@example.com
+</code></pre>
 <h2 id="github">注册GitHub网站</h2>
 <h3 id="_1">注册自己的账号</h3>
 <ol>
@@ -731,7 +741,8 @@
 <li>打开Git Bash</li>
 <li>输入以下内容  </li>
 </ol>
-<p><code>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</code></p>
+<pre><code> ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;
+</code></pre>
 <p>这将创建以所提供的电子邮件地址为标签的新 SSH 密钥。<br />
 3. 提示您“Enter a file in which to save the key（输入要保存密钥的文件）”时，按 Enter 键。 这将接受默认文件位置。<br />
 4. 在提示时输入安全密码。（可以不输）<br />
@@ -795,7 +806,8 @@
 <li>打开Git Bash软件</li>
 <li>在本地合适的位置使用命令clone线上仓库到线下，输入：  </li>
 </ol>
-<p><code>git clone git@github.com:&lt;用户名&gt;/&lt;用户名&gt;.github.io.git</code>  </p>
+<pre><code> git clone git@github.com:&lt;用户名&gt;/&lt;用户名&gt;.github.io.git
+</code></pre>
 <p>此处建议使用SSH秘钥clone</p>
 <h3 id="mkdocs_1">创建 mkdocs 项目</h3>
 <ol>
@@ -803,7 +815,8 @@
 <li>使用<code>cd  &lt;用户名&gt;.github.io</code>进去仓库</li>
 <li>创建文档项目，执行  </li>
 </ol>
-<p><code>mkdocs new &lt;文件名&gt;</code> </p>
+<pre><code> mkdocs new &lt;文件名&gt;
+</code></pre>
 <p>执行完成后会在本地会生成一个文件夹，此文件夹中包含站点所有文件信息
 4. 输入 <code>cd 文件名</code>进入文件</p>
 <h3 id="_4">配置项目</h3>
@@ -811,10 +824,13 @@
 <li>打开 mkdocs 项目下的 <code>mkdocs.yml</code></li>
 <li>使用material主题，输入以下内容</li>
 </ol>
-<p><code>theme:                              
- name: material</code><br />
-3. 编写目录</p>
-<p><code>nav:  
+<pre><code> theme:                              
+ name: material
+</code></pre>
+<ol>
+<li>编写目录</li>
+</ol>
+<pre><code>  nav:  
    - 介绍: index.md  
    - 安装:  
        - 本地环境搭建: install/local.md  
@@ -823,11 +839,12 @@
    - 语法:  
        - 语法总览: syntax/main.md  
        - 标题: syntax/headline.md  
-       - 段落: syntax/paragraph.md</code></p>
+       - 段落: syntax/paragraph.md  
+</code></pre>
 <p>上面的index.md就是放置在my-project/docs/index.md<br />
  上面的local.md就是放置在my-project/docs/install/local.md 
 4. 添加扩展，只有添加了扩展，才能完美使用mkdocs-material官方支持的所有markdown语法,在mkdocs.yml里添加:</p>
-<p><code>markdown_extensions:  
+<pre><code>  markdown_extensions:  
    - admonition    
    - codehilite:    
        guess_lang: false    
@@ -851,7 +868,8 @@
    - pymdownx.smartsymbols    
    - pymdownx.superfences    
    - pymdownx.tasklist    
-   - pymdownx.tilde</code>  </p>
+   - pymdownx.tilde    
+</code></pre>
 <h3 id="_5">编写站点内容</h3>
 <p>mkdocs项目下，找到一个以<strong>docs</strong>命名的文件夹，里面有一个index.md文件，编辑此文件，即编辑站点内容。</p>
 <h3 id="_6">启用本地服务查看呈现</h3>
@@ -866,7 +884,8 @@
 <li>进入上步创建的mkdocs文件中</li>
 <li>在创建的mkdocs文件夹目录下生成站点文件，执行  </li>
 </ol>
-<p><code>mkdocs build</code>   </p>
+<pre><code> mkdocs build
+</code></pre>
 <p>执行成功后会在本地文档项目文件夹中生成一个名为site的文件夹，site文件夹就是通过mkdocs编译生成的包含index.html的可被浏览器直接打开的静态前端站点</p>
 <h3 id="github_2">部署到Github</h3>
 <h4 id="_8">方法一</h4>
@@ -874,9 +893,10 @@
 <li>进入site文件夹，将文件夹里的文件拷贝到git本地仓库中（此步需要手动实现）</li>
 <li>在本地git仓库先后执行</li>
 </ol>
-<p><code>git add -A      
- git commit -m "commit words"    
- git push</code></p>
+<pre><code> git add -A      
+ git commit -m &quot;commit words&quot;    
+ git push 
+</code></pre>
 <p>将本地仓库中的文件同步到github的main branch上 <br />
 3. 此时通过<em>https://&lt;用户名&gt;.github.io</em>域名就可以访问到mkdocs静态网页站点<br />
 4. 使用这种方法每次更新本地站点文件需要手动同步一次到github上。</p>
@@ -884,7 +904,8 @@
 <ol>
 <li>直接在mkdocs项目下，将本地仓库中的文件同步到github的gh-pages  branch上 </li>
 </ol>
-<p><code>mkdocs gh-deploy</code></p>
+<pre><code> mkdocs gh-deploy
+</code></pre>
 <ol>
 <li>登入GitHub网站，进入所建仓库，点击<code>Setting</code><br />
 <center>
