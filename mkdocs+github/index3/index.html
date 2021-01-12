@@ -776,34 +776,30 @@
 <h3 id="_2">创建网站仓库</h3>
 <ol>
 <li>在任何页面的右上角，使用+下拉菜单选择 New repository（新建仓库）。
-    <center>
-    <img alt="" src="/image/A1.png" />
-    </center></li>
-<li>
-<p>为仓库输入名称，建议使用&lt;用户名&gt;.github.io</p>
-<p><center>
+<center>
+<img alt="" src="/image/A1.png" />
+</center></li>
+<li>为仓库输入名称，建议使用&lt;用户名&gt;.github.io
+<center>
 <img alt="" src="/image/A2.png" />
-</center></p>
-</li>
-<li>
-<p>（可选）添加仓库的说明。</p>
-<p><center>
+</center></li>
+<li>（可选）添加仓库的说明。
+<center>
 <img alt="" src="/image/A3.png" />
-</center>
-4. 选择仓库可见性。 </p>
-<p><center>
+</center></li>
+<li>选择仓库可见性。 
+<center>
 <img alt="" src="\image\A4.png" />
-</center>
-5. 选择 Initialize this repository with a README（使用自述文件初始化此仓库）。</p>
-<p><center>
+</center></li>
+<li>选择 Initialize this repository with a README（使用自述文件初始化此仓库）。
+<center>
 <img alt="" src="/image/A5.png" />
-</center>
-6. 点击 Create repository</p>
-<p><center>
+</center></li>
+<li>点击 Create repository
+<center>
 <img alt="" src="/image/A6.png" />
-</center>
-7. 创建成功</p>
-</li>
+</center></li>
+<li>创建成功</li>
 </ol>
 <h3 id="_3">克隆仓库到本地</h3>
 <ol>
@@ -826,7 +822,7 @@
 <h3 id="_4">配置项目</h3>
 <ol>
 <li>打开 mkdocs 项目下的 <code>mkdocs.yml</code></li>
-<li>1使用material主题，输入以下内容</li>
+<li>使用material主题，输入以下内容</li>
 </ol>
 <pre><code>theme:                              
 name: material
@@ -847,7 +843,7 @@ name: material
 </code></pre>
 <p>上面的index.md就是放置在my-project/docs/index.md<br />
  上面的local.md就是放置在my-project/docs/install/local.md 
-4. 1添加扩展，只有添加了扩展，才能完美使用mkdocs-material官方支持的所有markdown语法,在mkdocs.yml里添加:</p>
+4. 添加扩展，只有添加了扩展，才能完美使用mkdocs-material官方支持的所有markdown语法,在mkdocs.yml里添加:</p>
 <pre><code> markdown_extensions:  
   - admonition    
   - codehilite:    
@@ -911,18 +907,14 @@ git push
 <pre><code>mkdocs gh-deploy
 </code></pre>
 <ol>
-<li>
-<p>登入GitHub网站，进入所建仓库，点击<code>Setting</code><br />
+<li>登入GitHub网站，进入所建仓库，点击<code>Setting</code><br />
 <center>
 <img alt="" src="/image/A16.png" />
-</center>  </p>
-</li>
-<li>
-<p>在<code>options</code>下找到<code>Source</code>  <br />
+</center>  </li>
+<li>在<code>options</code>下找到<code>Source</code>  <br />
 <center>
 <img alt="" src="/image/A17.png" />
-</center></p>
-</li>
+</center></li>
 <li>将<code>Branch</code>改为<code>gh-pages</code>，点击<code>Save</code> </li>
 <li>此时通过<em>https://&lt;用户名&gt;.github.io</em>域名就可以访问到mkdocs静态网页站点 </li>
 </ol>
