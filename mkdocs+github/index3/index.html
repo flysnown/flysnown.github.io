@@ -703,16 +703,23 @@ Commands:
 <h3 id="git_1">配置Git</h3>
 <ol>
 <li>打开 Git Bash。</li>
-<li>
-<p>设置 Git 用户名 </p>
-<p><code>git config --global user.name "Mona Lisa"</code><br />
-3. 确认您正确设置了 Git 用户名：</p>
-<p><code>git config --global user.name           
-Mona Lisa</code><br />
-4. 在 Git 中设置电子邮件地址。 您可以使用 GitHub 提供的 <code>no-reply</code> 电子邮件地址或任何电子邮件地址。</p>
-<p><code>git config --global user.email "email@example.com"</code><br />
-5. 确认在 Git 中正确设置了电子邮件地址：</p>
-</li>
+<li>设置 Git 用户名 </li>
+</ol>
+<pre><code>    git config --global user.name &quot;Mona Lisa&quot;
+</code></pre>
+<ol>
+<li>确认您正确设置了 Git 用户名：</li>
+</ol>
+<pre><code>    git config --global user.name           
+    Mona Lisa
+</code></pre>
+<ol>
+<li>在 Git 中设置电子邮件地址。 您可以使用 GitHub 提供的 <code>no-reply</code> 电子邮件地址或任何电子邮件地址。</li>
+</ol>
+<pre><code>    git config --global user.email &quot;email@example.com&quot;
+</code></pre>
+<ol>
+<li>确认在 Git 中正确设置了电子邮件地址：</li>
 </ol>
 <pre><code> $ git config --global user.email  
  email@example.com
@@ -737,11 +744,10 @@ Mona Lisa</code><br />
 <h3 id="ssh">上传SSH秘钥</h3>
 <ol>
 <li>打开Git Bash</li>
-<li>
-<p>输入以下内容  </p>
-<p><code>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</code></p>
-</li>
+<li>输入以下内容  </li>
 </ol>
+<pre><code>    ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;
+</code></pre>
 <p>这将创建以所提供的电子邮件地址为标签的新 SSH 密钥。<br />
 3. 提示您“Enter a file in which to save the key（输入要保存密钥的文件）”时，按 Enter 键。 这将接受默认文件位置。<br />
 4. 在提示时输入安全密码。（可以不输）<br />
@@ -803,32 +809,31 @@ Mona Lisa</code><br />
 <h3 id="_3">克隆仓库到本地</h3>
 <ol>
 <li>打开Git Bash软件</li>
-<li>
-<p>在本地合适的位置使用命令clone线上仓库到线下，输入：  </p>
-<p><code>git clone git@github.com:&lt;用户名&gt;/&lt;用户名&gt;.github.io.git</code>  </p>
-</li>
+<li>在本地合适的位置使用命令clone线上仓库到线下，输入：  </li>
 </ol>
+<pre><code>    git clone git@github.com:&lt;用户名&gt;/&lt;用户名&gt;.github.io.git
+</code></pre>
 <p>此处建议使用SSH秘钥clone</p>
 <h3 id="mkdocs_1">创建 mkdocs 项目</h3>
 <ol>
 <li>打开 Git Bash 软件</li>
 <li>使用<code>cd  &lt;用户名&gt;.github.io</code>进去仓库</li>
-<li>
-<p>创建文档项目，执行  </p>
-<p><code>mkdocs new &lt;文件名&gt;</code> </p>
-</li>
+<li>创建文档项目，执行  </li>
 </ol>
+<pre><code>    mkdocs new &lt;文件名&gt;
+</code></pre>
 <p>执行完成后会在本地会生成一个文件夹，此文件夹中包含站点所有文件信息
 4. 输入 <code>cd 文件名</code>进入文件</p>
 <h3 id="_4">配置项目</h3>
 <ol>
 <li>打开 mkdocs 项目下的 <code>mkdocs.yml</code></li>
-<li>
-<p>使用material主题，输入以下内容</p>
-<p><code>theme:                              
-name: material</code><br />
-3. 编写目录</p>
-</li>
+<li>使用material主题，输入以下内容</li>
+</ol>
+<pre><code>    theme:                              
+    name: material
+</code></pre>
+<ol>
+<li>编写目录</li>
 </ol>
 <pre><code>     nav:  
       - 介绍: index.md  
@@ -882,38 +887,35 @@ name: material</code><br />
 <ol>
 <li>打开Git Bash软件</li>
 <li>进入上步创建的mkdocs文件中</li>
-<li>
-<p>在创建的mkdocs文件夹目录下生成站点文件，执行  </p>
-<p><code>mkdocs build</code>   </p>
-</li>
+<li>在创建的mkdocs文件夹目录下生成站点文件，执行  </li>
 </ol>
+<pre><code>    mkdocs build
+</code></pre>
 <p>执行成功后会在本地文档项目文件夹中生成一个名为site的文件夹，site文件夹就是通过mkdocs编译生成的包含index.html的可被浏览器直接打开的静态前端站点</p>
 <h3 id="github_2">部署到Github</h3>
 <h4 id="_8">方法一</h4>
 <ol>
 <li>进入site文件夹，将文件夹里的文件拷贝到git本地仓库中（此步需要手动实现）</li>
-<li>
-<p>在本地git仓库先后执行</p>
-<p>git add -A    <br />
-git commit -m "commit words"  <br />
-git push </p>
-</li>
+<li>在本地git仓库先后执行</li>
 </ol>
+<pre><code>    git add -A      
+    git commit -m &quot;commit words&quot;    
+    git push 
+</code></pre>
 <p>将本地仓库中的文件同步到github的main branch上 <br />
 3. 此时通过<em>https://&lt;用户名&gt;.github.io</em>域名就可以访问到mkdocs静态网页站点<br />
 4. 使用这种方法每次更新本地站点文件需要手动同步一次到github上。</p>
 <h4 id="_9">方法二</h4>
 <ol>
-<li>
-<p>直接在mkdocs项目下，将本地仓库中的文件同步到github的gh-pages  branch上 </p>
-<p><code>mkdocs gh-deploy</code></p>
-</li>
-<li>
-<p>登入GitHub网站，进入所建仓库，点击<code>Setting</code><br />
+<li>直接在mkdocs项目下，将本地仓库中的文件同步到github的gh-pages  branch上 </li>
+</ol>
+<pre><code>    mkdocs gh-deploy
+</code></pre>
+<ol>
+<li>登入GitHub网站，进入所建仓库，点击<code>Setting</code><br />
 <center>
 <img alt="" src="/image/A16.png" />
-</center>  </p>
-</li>
+</center>  </li>
 <li>在<code>options</code>下找到<code>Source</code>  <br />
 <center>
 <img alt="" src="/image/A17.png" />
