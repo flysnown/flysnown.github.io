@@ -1,16 +1,22 @@
-site_name: 主页  
+site_name: flysnown
+ 
 theme:
   name: material
-  features:
-    - navigation.instant
+  features:  
     - navigation.tabs
+    - navigation.instant
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
 
-nav:
--  主页: index.md
--  视频会议读书笔记: 视频会议读书笔记/index2.md  
--  mkdocs+GitHub: mkdocs+github/index3.md
--  About me: author/index4.md
 
+nav:  
+
+- home: index.md
+- Blog:  
+    - 视频会议读书笔记: 视频会议读书笔记/index2.md
+    - mkdocs+GitHub: mkdocs+github/index3.md
+- About me: author/index4.md  
 
 
 markdown_extensions:
@@ -40,17 +46,8 @@ markdown_extensions:
   - pymdownx.tilde
 
 
-
-
-extra_css:
-  - stylesheets/extra.css
-
-extra_javascript:
-  - javascripts/extra.js
-
 markdown_extensions:
-  - toc:
-      slugify: !!python/name:pymdownx.slugs.uslugify
+  - attr_list
 
 
 plugins:
