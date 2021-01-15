@@ -15,8 +15,9 @@ nav:
 - home: index.md
 - Blog: 
     - 读书笔记:  
-        - 《视频会议基础教程》读书笔记（第一部分）: reading_notes/index.md
-        - 《视频会议基础教程》读书笔记（第二部分）: reading_notes/reading_notes/index.md
+        - 《视频会议基础教程》读书笔记（第一部分）: reading_notes/first/index.md
+        - 《视频会议基础教程》读书笔记（第二部分）: reading_notes/second/index.md
+        - 《视频会议基础教程》读书笔记（第三部分）: reading_notes/third/index.md
     - mkdocs+GitHub: mkdocs_github/index.md
 - About me: author/index.md  
 
