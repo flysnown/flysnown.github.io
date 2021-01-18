@@ -2,4 +2,4 @@
 
 记录生活点滴
 
-[开始阅读](https://flysnown.github.io/reading_notes/){: .md-button }
+[开始阅读](/reading_notes/overview_of_video_conferencing/){: .md-button }

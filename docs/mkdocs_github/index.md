@@ -1,4 +1,4 @@
-# Mkdocs+github pages
+# Mkdocs_github pages
 
 ## 安装 mkdocs 和 Git 软件
 
@@ -78,12 +78,12 @@ Commands:
 2、 点击右上角的`sign up`进行注册
 
 <center>
-![](/image/A13.png)
+![](./image/A13.png)
 </center>  
 3、 输入用户名和邮箱并验证
 
 <center>
-![](/image/A14.png)
+![](./image/A14.png)
 </center>   
 4、 登陆GitHub
 
@@ -105,32 +105,32 @@ Commands:
 6、 登入GitHub网站，在页面的右上角，单击您的个人资料照片，然后单击 Settings（设置）
 
 <center>
-![](/image/A7.png)
+![](./image/A7.png)
 </center>  
 7、 在用户设置侧边栏中，单击 SSH and GPG keys（SSH 和 GPG 密钥）。
 
 <center>
-![](/image/A8.png)
+![](./image/A8.png)
 </center>  
 8、 单击 New SSH key（新 SSH 密钥）或 Add SSH key（添加 SSH 密钥）。
 
 <center>
-![](/image/A9.png)
+![](./image/A9.png)
 </center>  
 9、 在 "Title"（标题）字段中，为新密钥添加描述性标签。
 
 <center>
-![](/image/A10.png)
+![](./image/A10.png)
 </center>  
 10、 将密钥粘贴到 "Key"（密钥）字段。
 
 <center>
-![](/image/A11.png)
+![](./image/A11.png)
 </center>  
 11、 单击 Add SSH key（添加 SSH 密钥）。
 
 <center>
-![](/image/A12.png)
+![](./image/A12.png)
 </center>  
 12、 有可能会提示输入登入密码
 
@@ -141,27 +141,27 @@ Commands:
 
 1、 在任何页面的右上角，使用+下拉菜单选择 New repository（新建仓库）。
 <center>
-![](/image/A1.png)
+![](./image/A1.png)
 </center>  
 2、 为仓库输入名称，建议使用<用户名>.github.io
 <center>
-![](/image/A2.png)
+![](./image/A2.png)
 </center>  
 3、 （可选）添加仓库的说明。
 <center>
-![](/image/A3.png)
+![](./image/A3.png)
 </center>  
 4、 选择仓库可见性。 
 <center>
-![](\image\A4.png)
+![](./image/A4.png)
 </center>  
 5、 选择 Initialize this repository with a README（使用自述文件初始化此仓库）。
 <center>
-![](/image/A5.png)
+![](./image/A5.png)
 </center>  
 6、 点击 Create repository
 <center>
-![](/image/A6.png)
+![](./image/A6.png)
 </center>  
 7、 创建成功
 
@@ -268,11 +268,11 @@ Commands:
 
 2、 登入GitHub网站，进入所建仓库，点击`Setting`  
 <center>
-![](/image/A16.png)
+![](./image/A16.png)
 </center>  
 3、 在`options`下找到`Source`    
 <center>
-![](/image/A17.png)
+![](./image/A17.png)
 </center>
 4、 将`Branch`改为`gh-pages`，点击`Save` 
 5、 此时通过*https://<用户名>.github.io*域名就可以访问到mkdocs静态网页站点 
